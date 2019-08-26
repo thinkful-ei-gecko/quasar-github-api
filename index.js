@@ -15,8 +15,7 @@ const displayResults = function(results) {
     console.log(`${results[i].name}`);
     $('.search-results').append(
       `<li>
-        <h2>${results[i].name}</h2>
-        <h3>${results[i].html_url}</h3>
+        <h2><a href=${results[i].html_url}>${results[i].name}</a></h2>
       </li>`
     );
   }
